@@ -1,7 +1,5 @@
 package com.apurv.test.model;
 
-import com.apurv.test.entity.Subject;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
