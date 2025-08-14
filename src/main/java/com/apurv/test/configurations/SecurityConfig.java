@@ -25,8 +25,9 @@ public class SecurityConfig {
     }
 
     private void configureUrlMatchers(AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry auth) {
-        auth.requestMatchers("/app/v1/student/**").hasAnyRole("admin").anyRequest().authenticated();
         auth.requestMatchers("app/v1/registration/**").permitAll();
+        auth.requestMatchers("/app/v1/student/**").hasAnyRole("admin").anyRequest().authenticated();
+
     }
 
     @Bean
